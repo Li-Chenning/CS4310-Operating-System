@@ -1,0 +1,455 @@
+testdata1.txt: 
+First Come First Serve:
+________________________________________________________________________
+|	Job#	|   Start time	|   Endtime	|	Job completion 		|
+|	Job101	|	0	|	8	|job Job101 completed at 8	|
+|	Job102	|	8	|	13	|job Job102 completed at 13	|
+|	Job103	|	13	|	25	|job Job103 completed at 25	|
+|	Job104	|	25	|	42	|job Job104 completed at 42	|
+|	Job105	|	42	|	44	|job Job105 completed at 44	|
+|	Job106	|	44	|	50	|job Job106 completed at 50	|
+________________________________________________________________________
+the average turnaround time is: 30.333334
+
+Shortest job first: 
+________________________________________________________________________
+|	Job#	|   Start time	|   Endtime	|	Job completion 		|
+|	Job105	|	0	|	2	|job Job105 completed at 2	|
+|	Job102	|	2	|	7	|job Job102 completed at 7	|
+|	Job106	|	7	|	13	|job Job106 completed at 13	|
+|	Job101	|	13	|	21	|job Job101 completed at 21	|
+|	Job103	|	21	|	33	|job Job103 completed at 33	|
+|	Job104	|	33	|	50	|job Job104 completed at 50	|
+________________________________________________________________________
+the average turnaround time is: 21.0
+
+Round Robin 2: 
+________________________________________________________________________
+|	Job#	|   Start time	|   Endtime	|	Job completion 	|
+|
+	Job101	|	0	|	2	|
+	Job102	|	2	|	4	|
+	Job103	|	4	|	6	|
+	Job104	|	6	|	8	
+|	Job105	|	8	|	10	|job Job105 completed at 10	||
+	Job106	|	10	|	12	|
+	Job101	|	12	|	14	|
+	Job102	|	14	|	16	|
+	Job103	|	16	|	18	|
+	Job104	|	18	|	20	|
+	Job106	|	20	|	22	|
+	Job101	|	22	|	24	
+|	Job102	|	24	|	25	|job Job102 completed at 25	||
+	Job103	|	25	|	27	|
+	Job104	|	27	|	29	
+|	Job106	|	29	|	31	|job Job106 completed at 31	|
+|	Job101	|	31	|	33	|job Job101 completed at 33	||
+	Job103	|	33	|	35	|
+	Job104	|	35	|	37	|
+	Job103	|	37	|	39	|
+	Job104	|	39	|	41	
+|	Job103	|	41	|	43	|job Job103 completed at 43	||
+	Job104	|	43	|	45	|
+	Job104	|	45	|	47	|
+	Job104	|	47	|	49	
+|	Job104	|	49	|	50	|job Job104 completed at 50	|
+the average turnaround time is: 
+32.0
+Round Robin 5: 
+________________________________________________________________________
+|	Job#	|   Start time	|   Endtime	|	Job completion 	|
+|
+	Job101	|	0	|	5	
+|	Job102	|	5	|	10	|job Job102 completed at 10	||
+	Job103	|	10	|	15	|
+	Job104	|	15	|	20	
+|	Job105	|	20	|	22	|job Job105 completed at 22	||
+	Job106	|	22	|	27	
+|	Job101	|	27	|	30	|job Job101 completed at 30	||
+	Job103	|	30	|	35	|
+	Job104	|	35	|	40	
+|	Job106	|	40	|	41	|job Job106 completed at 41	|
+|	Job103	|	41	|	43	|job Job103 completed at 43	||
+	Job104	|	43	|	48	
+|	Job104	|	48	|	50	|job Job104 completed at 50	|
+the average turnaround time is: 
+32.666668
+testdata2.txt: 
+First Come First Serve:
+________________________________________________________________________
+|	Job#	|   Start time	|   Endtime	|	Job completion 	|
+|	Job201	|	0	|	22	|job Job201 completed at 22	|
+|	Job202	|	22	|	34	|job Job202 completed at 34	|
+|	Job203	|	34	|	40	|job Job203 completed at 40	|
+|	Job204	|	40	|	53	|job Job204 completed at 53	|
+|	Job205	|	53	|	61	|job Job205 completed at 61	|
+|	Job206	|	61	|	62	|job Job206 completed at 62	|
+|	Job207	|	62	|	71	|job Job207 completed at 71	|
+|	Job208	|	71	|	99	|job Job208 completed at 99	|
+|	Job209	|	99	|	103	|job Job209 completed at 103	|
+|	Job210	|	103	|	125	|job Job210 completed at 125	|
+________________________________________________________________________
+the average turnaround time is: 67.0
+
+Shortest job first: 
+________________________________________________________________________
+|	Job#	|   Start time	|   Endtime	|	Job completion 	|
+|	Job206	|	0	|	1	|job Job206 completed at 1	|
+|	Job209	|	1	|	5	|job Job209 completed at 5	|
+|	Job203	|	5	|	11	|job Job203 completed at 11	|
+|	Job205	|	11	|	19	|job Job205 completed at 19	|
+|	Job207	|	19	|	28	|job Job207 completed at 28	|
+|	Job202	|	28	|	40	|job Job202 completed at 40	|
+|	Job204	|	40	|	53	|job Job204 completed at 53	|
+|	Job201	|	53	|	75	|job Job201 completed at 75	|
+|	Job210	|	75	|	97	|job Job210 completed at 97	|
+|	Job208	|	97	|	125	|job Job208 completed at 125	|
+________________________________________________________________________
+the average turnaround time is: 45.4
+
+Round Robin 2: 
+________________________________________________________________________
+|	Job#	|   Start time	|   Endtime	|	Job completion 	|
+|
+	Job201	|	0	|	2	|
+	Job202	|	2	|	4	|
+	Job203	|	4	|	6	|
+	Job204	|	6	|	8	|
+	Job205	|	8	|	10	
+|	Job206	|	10	|	11	|job Job206 completed at 11	||
+	Job207	|	11	|	13	|
+	Job208	|	13	|	15	|
+	Job209	|	15	|	17	|
+	Job210	|	17	|	19	|
+	Job201	|	19	|	21	|
+	Job202	|	21	|	23	|
+	Job203	|	23	|	25	|
+	Job204	|	25	|	27	|
+	Job205	|	27	|	29	|
+	Job207	|	29	|	31	|
+	Job208	|	31	|	33	
+|	Job209	|	33	|	35	|job Job209 completed at 35	||
+	Job210	|	35	|	37	|
+	Job201	|	37	|	39	|
+	Job202	|	39	|	41	
+|	Job203	|	41	|	43	|job Job203 completed at 43	||
+	Job204	|	43	|	45	|
+	Job205	|	45	|	47	|
+	Job207	|	47	|	49	|
+	Job208	|	49	|	51	|
+	Job210	|	51	|	53	|
+	Job201	|	53	|	55	|
+	Job202	|	55	|	57	|
+	Job204	|	57	|	59	
+|	Job205	|	59	|	61	|job Job205 completed at 61	||
+	Job207	|	61	|	63	|
+	Job208	|	63	|	65	|
+	Job210	|	65	|	67	|
+	Job201	|	67	|	69	|
+	Job202	|	69	|	71	|
+	Job204	|	71	|	73	
+|	Job207	|	73	|	74	|job Job207 completed at 74	||
+	Job208	|	74	|	76	|
+	Job210	|	76	|	78	|
+	Job201	|	78	|	80	
+|	Job202	|	80	|	82	|job Job202 completed at 82	||
+	Job204	|	82	|	84	|
+	Job208	|	84	|	86	|
+	Job210	|	86	|	88	|
+	Job201	|	88	|	90	
+|	Job204	|	90	|	91	|job Job204 completed at 91	||
+	Job208	|	91	|	93	|
+	Job210	|	93	|	95	|
+	Job201	|	95	|	97	|
+	Job208	|	97	|	99	|
+	Job210	|	99	|	101	|
+	Job201	|	101	|	103	|
+	Job208	|	103	|	105	|
+	Job210	|	105	|	107	|
+	Job201	|	107	|	109	|
+	Job208	|	109	|	111	|
+	Job210	|	111	|	113	
+|	Job201	|	113	|	115	|job Job201 completed at 115	||
+	Job208	|	115	|	117	
+|	Job210	|	117	|	119	|job Job210 completed at 119	||
+	Job208	|	119	|	121	|
+	Job208	|	121	|	123	
+|	Job208	|	123	|	125	|job Job208 completed at 125	|
+the average turnaround time is: 
+75.6
+Round Robin 5: 
+________________________________________________________________________
+|	Job#	|   Start time	|   Endtime	|	Job completion 	|
+|
+	Job201	|	0	|	5	|
+	Job202	|	5	|	10	|
+	Job203	|	10	|	15	|
+	Job204	|	15	|	20	|
+	Job205	|	20	|	25	
+|	Job206	|	25	|	26	|job Job206 completed at 26	||
+	Job207	|	26	|	31	|
+	Job208	|	31	|	36	
+|	Job209	|	36	|	40	|job Job209 completed at 40	||
+	Job210	|	40	|	45	|
+	Job201	|	45	|	50	|
+	Job202	|	50	|	55	
+|	Job203	|	55	|	56	|job Job203 completed at 56	||
+	Job204	|	56	|	61	
+|	Job205	|	61	|	64	|job Job205 completed at 64	|
+|	Job207	|	64	|	68	|job Job207 completed at 68	||
+	Job208	|	68	|	73	|
+	Job210	|	73	|	78	|
+	Job201	|	78	|	83	
+|	Job202	|	83	|	85	|job Job202 completed at 85	|
+|	Job204	|	85	|	88	|job Job204 completed at 88	||
+	Job208	|	88	|	93	|
+	Job210	|	93	|	98	|
+	Job201	|	98	|	103	|
+	Job208	|	103	|	108	|
+	Job210	|	108	|	113	
+|	Job201	|	113	|	115	|job Job201 completed at 115	||
+	Job208	|	115	|	120	
+|	Job210	|	120	|	122	|job Job210 completed at 122	|
+|	Job208	|	122	|	125	|job Job208 completed at 125	|
+the average turnaround time is: 
+78.9
+testdata3.txt: 
+First Come First Serve:
+________________________________________________________________________
+|	Job#	|   Start time	|   Endtime	|	Job completion 	|
+|	Job301	|	0	|	17	|job Job301 completed at 17	|
+|	Job302	|	17	|	30	|job Job302 completed at 30	|
+|	Job303	|	30	|	55	|job Job303 completed at 55	|
+|	Job304	|	55	|	64	|job Job304 completed at 64	|
+|	Job305	|	64	|	77	|job Job305 completed at 77	|
+|	Job306	|	77	|	83	|job Job306 completed at 83	|
+|	Job307	|	83	|	88	|job Job307 completed at 88	|
+|	Job308	|	88	|	90	|job Job308 completed at 90	|
+|	Job309	|	90	|	101	|job Job309 completed at 101	|
+|	Job310	|	101	|	121	|job Job310 completed at 121	|
+|	Job311	|	121	|	137	|job Job311 completed at 137	|
+|	Job312	|	137	|	143	|job Job312 completed at 143	|
+|	Job313	|	143	|	160	|job Job313 completed at 160	|
+|	Job314	|	160	|	164	|job Job314 completed at 164	|
+|	Job315	|	164	|	182	|job Job315 completed at 182	|
+|	Job316	|	182	|	194	|job Job316 completed at 194	|
+|	Job317	|	194	|	206	|job Job317 completed at 206	|
+|	Job318	|	206	|	237	|job Job318 completed at 237	|
+________________________________________________________________________
+the average turnaround time is: 119.388885
+
+Shortest job first: 
+________________________________________________________________________
+|	Job#	|   Start time	|   Endtime	|	Job completion 	|
+|	Job308	|	0	|	2	|job Job308 completed at 2	|
+|	Job314	|	2	|	6	|job Job314 completed at 6	|
+|	Job307	|	6	|	11	|job Job307 completed at 11	|
+|	Job306	|	11	|	17	|job Job306 completed at 17	|
+|	Job312	|	17	|	23	|job Job312 completed at 23	|
+|	Job304	|	23	|	32	|job Job304 completed at 32	|
+|	Job309	|	32	|	43	|job Job309 completed at 43	|
+|	Job316	|	43	|	55	|job Job316 completed at 55	|
+|	Job317	|	55	|	67	|job Job317 completed at 67	|
+|	Job302	|	67	|	80	|job Job302 completed at 80	|
+|	Job305	|	80	|	93	|job Job305 completed at 93	|
+|	Job311	|	93	|	109	|job Job311 completed at 109	|
+|	Job301	|	109	|	126	|job Job301 completed at 126	|
+|	Job313	|	126	|	143	|job Job313 completed at 143	|
+|	Job315	|	143	|	161	|job Job315 completed at 161	|
+|	Job310	|	161	|	181	|job Job310 completed at 181	|
+|	Job303	|	181	|	206	|job Job303 completed at 206	|
+|	Job318	|	206	|	237	|job Job318 completed at 237	|
+________________________________________________________________________
+the average turnaround time is: 88.44444
+
+Round Robin 2: 
+________________________________________________________________________
+|	Job#	|   Start time	|   Endtime	|	Job completion 	|
+|
+	Job301	|	0	|	2	|
+	Job302	|	2	|	4	|
+	Job303	|	4	|	6	|
+	Job304	|	6	|	8	|
+	Job305	|	8	|	10	|
+	Job306	|	10	|	12	|
+	Job307	|	12	|	14	
+|	Job308	|	14	|	16	|job Job308 completed at 16	||
+	Job309	|	16	|	18	|
+	Job310	|	18	|	20	|
+	Job311	|	20	|	22	|
+	Job312	|	22	|	24	|
+	Job313	|	24	|	26	|
+	Job314	|	26	|	28	|
+	Job315	|	28	|	30	|
+	Job316	|	30	|	32	|
+	Job317	|	32	|	34	|
+	Job318	|	34	|	36	|
+	Job301	|	36	|	38	|
+	Job302	|	38	|	40	|
+	Job303	|	40	|	42	|
+	Job304	|	42	|	44	|
+	Job305	|	44	|	46	|
+	Job306	|	46	|	48	|
+	Job307	|	48	|	50	|
+	Job309	|	50	|	52	|
+	Job310	|	52	|	54	|
+	Job311	|	54	|	56	|
+	Job312	|	56	|	58	|
+	Job313	|	58	|	60	
+|	Job314	|	60	|	62	|job Job314 completed at 62	||
+	Job315	|	62	|	64	|
+	Job316	|	64	|	66	|
+	Job317	|	66	|	68	|
+	Job318	|	68	|	70	|
+	Job301	|	70	|	72	|
+	Job302	|	72	|	74	|
+	Job303	|	74	|	76	|
+	Job304	|	76	|	78	|
+	Job305	|	78	|	80	
+|	Job306	|	80	|	82	|job Job306 completed at 82	|
+|	Job307	|	82	|	83	|job Job307 completed at 83	||
+	Job309	|	83	|	85	|
+	Job310	|	85	|	87	|
+	Job311	|	87	|	89	
+|	Job312	|	89	|	91	|job Job312 completed at 91	||
+	Job313	|	91	|	93	|
+	Job315	|	93	|	95	|
+	Job316	|	95	|	97	|
+	Job317	|	97	|	99	|
+	Job318	|	99	|	101	|
+	Job301	|	101	|	103	|
+	Job302	|	103	|	105	|
+	Job303	|	105	|	107	|
+	Job304	|	107	|	109	|
+	Job305	|	109	|	111	|
+	Job309	|	111	|	113	|
+	Job310	|	113	|	115	|
+	Job311	|	115	|	117	|
+	Job313	|	117	|	119	|
+	Job315	|	119	|	121	|
+	Job316	|	121	|	123	|
+	Job317	|	123	|	125	|
+	Job318	|	125	|	127	|
+	Job301	|	127	|	129	|
+	Job302	|	129	|	131	|
+	Job303	|	131	|	133	
+|	Job304	|	133	|	134	|job Job304 completed at 134	||
+	Job305	|	134	|	136	|
+	Job309	|	136	|	138	|
+	Job310	|	138	|	140	|
+	Job311	|	140	|	142	|
+	Job313	|	142	|	144	|
+	Job315	|	144	|	146	|
+	Job316	|	146	|	148	|
+	Job317	|	148	|	150	|
+	Job318	|	150	|	152	|
+	Job301	|	152	|	154	|
+	Job302	|	154	|	156	|
+	Job303	|	156	|	158	|
+	Job305	|	158	|	160	
+|	Job309	|	160	|	161	|job Job309 completed at 161	||
+	Job310	|	161	|	163	|
+	Job311	|	163	|	165	|
+	Job313	|	165	|	167	|
+	Job315	|	167	|	169	
+|	Job316	|	169	|	171	|job Job316 completed at 171	|
+|	Job317	|	171	|	173	|job Job317 completed at 173	||
+	Job318	|	173	|	175	|
+	Job301	|	175	|	177	
+|	Job302	|	177	|	178	|job Job302 completed at 178	||
+	Job303	|	178	|	180	
+|	Job305	|	180	|	181	|job Job305 completed at 181	||
+	Job310	|	181	|	183	|
+	Job311	|	183	|	185	|
+	Job313	|	185	|	187	|
+	Job315	|	187	|	189	|
+	Job318	|	189	|	191	|
+	Job301	|	191	|	193	|
+	Job303	|	193	|	195	|
+	Job310	|	195	|	197	
+|	Job311	|	197	|	199	|job Job311 completed at 199	||
+	Job313	|	199	|	201	|
+	Job315	|	201	|	203	|
+	Job318	|	203	|	205	
+|	Job301	|	205	|	206	|job Job301 completed at 206	||
+	Job303	|	206	|	208	|
+	Job310	|	208	|	210	
+|	Job313	|	210	|	211	|job Job313 completed at 211	|
+|	Job315	|	211	|	213	|job Job315 completed at 213	||
+	Job318	|	213	|	215	|
+	Job303	|	215	|	217	
+|	Job310	|	217	|	219	|job Job310 completed at 219	||
+	Job318	|	219	|	221	|
+	Job303	|	221	|	223	|
+	Job318	|	223	|	225	|
+	Job303	|	225	|	227	|
+	Job318	|	227	|	229	
+|	Job303	|	229	|	230	|job Job303 completed at 230	||
+	Job318	|	230	|	232	|
+	Job318	|	232	|	234	|
+	Job318	|	234	|	236	
+|	Job318	|	236	|	237	|job Job318 completed at 237	|
+the average turnaround time is: 
+158.16667
+Round Robin 5: 
+________________________________________________________________________
+|	Job#	|   Start time	|   Endtime	|	Job completion 	|
+|
+	Job301	|	0	|	5	|
+	Job302	|	5	|	10	|
+	Job303	|	10	|	15	|
+	Job304	|	15	|	20	|
+	Job305	|	20	|	25	|
+	Job306	|	25	|	30	
+|	Job307	|	30	|	35	|job Job307 completed at 35	|
+|	Job308	|	35	|	37	|job Job308 completed at 37	||
+	Job309	|	37	|	42	|
+	Job310	|	42	|	47	|
+	Job311	|	47	|	52	|
+	Job312	|	52	|	57	|
+	Job313	|	57	|	62	
+|	Job314	|	62	|	66	|job Job314 completed at 66	||
+	Job315	|	66	|	71	|
+	Job316	|	71	|	76	|
+	Job317	|	76	|	81	|
+	Job318	|	81	|	86	|
+	Job301	|	86	|	91	|
+	Job302	|	91	|	96	|
+	Job303	|	96	|	101	
+|	Job304	|	101	|	105	|job Job304 completed at 105	||
+	Job305	|	105	|	110	
+|	Job306	|	110	|	111	|job Job306 completed at 111	||
+	Job309	|	111	|	116	|
+	Job310	|	116	|	121	|
+	Job311	|	121	|	126	
+|	Job312	|	126	|	127	|job Job312 completed at 127	||
+	Job313	|	127	|	132	|
+	Job315	|	132	|	137	|
+	Job316	|	137	|	142	|
+	Job317	|	142	|	147	|
+	Job318	|	147	|	152	|
+	Job301	|	152	|	157	
+|	Job302	|	157	|	160	|job Job302 completed at 160	||
+	Job303	|	160	|	165	
+|	Job305	|	165	|	168	|job Job305 completed at 168	|
+|	Job309	|	168	|	169	|job Job309 completed at 169	||
+	Job310	|	169	|	174	|
+	Job311	|	174	|	179	|
+	Job313	|	179	|	184	|
+	Job315	|	184	|	189	
+|	Job316	|	189	|	191	|job Job316 completed at 191	|
+|	Job317	|	191	|	193	|job Job317 completed at 193	||
+	Job318	|	193	|	198	
+|	Job301	|	198	|	200	|job Job301 completed at 200	||
+	Job303	|	200	|	205	
+|	Job310	|	205	|	210	|job Job310 completed at 210	|
+|	Job311	|	210	|	211	|job Job311 completed at 211	|
+|	Job313	|	211	|	213	|job Job313 completed at 213	|
+|	Job315	|	213	|	216	|job Job315 completed at 216	||
+	Job318	|	216	|	221	
+|	Job303	|	221	|	226	|job Job303 completed at 226	||
+	Job318	|	226	|	231	|
+	Job318	|	231	|	236	
+|	Job318	|	236	|	237	|job Job318 completed at 237	|
+the average turnaround time is: 
+159.72223
